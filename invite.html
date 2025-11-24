@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Fredoka One', cursive;
+
+      background-image: url('baby_shower.jpg'); /* your uploaded image */
+      background-size: contain;        /* shows full image without cropping */
+      background-repeat: no-repeat;
+      background-position: center top; /* keeps center area visible */
+      background-color: #aee1ff;       /* fills empty space on tall screens */
+
+      text-align: center;
+      color: #2b2b6e;
+      padding-top: 20px;
+    }
+
+    .tight {
+      margin: 0;          
+      padding: 0;
+      line-height: 1.1;   
+    }
+
+    p.rsvp {
+      font-size: 1rem;  
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .date { color: #4714ff; }
+    .time { color: #4714ff; }
+
+    .content {
+      margin: 0 auto;
+      width: 85%;
+      max-width: 600px;
+      padding-top: 100px;  
+      opacity: 0;               /* start hidden */
+      animation: fadeIn 2s forwards; /* fade in over 2s */
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #005bbb;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      color: #004080;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    /* ANIMATIONS */
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-10px); }
+      60% { transform: translateY(-5px); }
+    }
+
+    @keyframes pulse {
+      0% { color: #ff1493; }
+      50% { color: #ff69b4; }
+      100% { color: #ff1493; }
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    h1.tight {
+      animation: bounce 2s infinite;
+    }
+
+    h1 span {
+      animation: pulse 2s infinite;
+    }
+
+    @media (max-width: 600px) {
+      .content {
+        padding-top: 140px; 
+      }
+      h1 { font-size: 1.7rem; }
+      h2 { font-size: 1.3rem; }
+      p  { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <h3 class="tight">Join us for a</h3>
+    <h1 class="tight">Baby Shower!</h1>
+    <h3 style="margin-bottom: 0;">In honor of</h3>
+    <h1 style="margin-top: 0;"><span>SNEKA KARTHIK</span></h1>
+
+    <h3>🎈Date: <span class="date">Nov 30, 2025</span> </h3>
+    <h3>🕒Time: <span class="time">12:00 PM – 3:00 PM</span></h3>
+    <h3>📍Where: 
+      <a href="https://maps.app.goo.gl/wbfNC1a887LfLRtk6" target="_blank">Party Location</a>
+    </h3>
+
+    <p class="rsvp">
+      RSVP:<br>
+      +1(678)-687-7503<br>
+      +91-9043641006<br>
+      +91-9677148014<br>
+      By Thursday 11/27
+    </p>
+  </div>
+
+</body>
+</html>
